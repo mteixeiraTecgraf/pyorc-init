@@ -1,0 +1,31 @@
+{
+  "name": "openrivercam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "sudo": "sudo"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "clone:orc-app":"git clone https://github.com/localdevices/OpenRiverCam.git",
+    "up":"cd OpenRiverCam && $npm_package_config_sudo docker compose up -d",
+    "clone:orclib":"git clone https://github.com/localdevices/OpenRiverCam.git",
+    "console":"$npm_package_config_sudo docker exec -it openrivercam-processing-1 bash",
+    "portal":"$npm_package_config_sudo docker compose up portal -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localdevices/OpenRiverCam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/localdevices/OpenRiverCam/issues"
+  },
+  "homepage": "https://github.com/localdevices/OpenRiverCam#readme"
+}
