@@ -22,7 +22,10 @@
     "docker:run:console": "$npm_package_config_sudo docker run -it -v $PWD:/src -w /src pyorc bash",
     "drc":"npm run docker:run:console", 
 
-    "clone:all":"npm run clone:orc-app && npm run clone:orc-lib",
+    
+    "clone:orc-mob":"git clone https://github.com/mteixeiraTecgraf/pyorc-kivy.git",
+
+    "clone:all":"npm run clone:orc-app && npm run clone:orc-lib && npm run clone:orc-mob",
 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
